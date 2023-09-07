@@ -49,6 +49,7 @@ button {
 header {
     padding-block: 1rem;
     box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .5);
+    background-color: #415a77;
 }
 
 .nav {
@@ -59,6 +60,7 @@ header {
     padding-inline: 2rem;
     max-width: 1000px;
     margin: 0 auto; /*0 up and down, auto, get centered elements*/
+    background-color: #415a77;
 }
 
 .nav-list {
@@ -66,6 +68,13 @@ header {
     align-items: center;
     flex-wrap: wrap /*hace que los elementos se ajusten al margen*/;
     gap: .5rem;
+}
+
+.logo img {
+    
+    width: auto;
+    height: auto;
+    max-width: 10rem;
 }
 
 .btn-header {
@@ -86,8 +95,9 @@ header {
 
 main {
     padding: 2rem;
-    max-width: 1000px;
+    max-width: auto;
     margin: 0 auto; /*0 up and down, auto, get centered elements*/
+    background-color: #e0e1dd;
 }
 
 .pokemon-todos {
@@ -102,7 +112,7 @@ main {
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .pokemon-todos {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -110,7 +120,7 @@ main {
 
 .pokemon {
     border-radius: 1rem; /*los bordes de los elementos son romos*/
-    background-color: var(--clr-white);
+    background-color: #adb5bd;
     box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .25); /*-1rem acentua elemento*/
     padding-block: 1rem; /*misma distancia up and down*/
     text-transform: uppercase;
@@ -202,7 +212,7 @@ main {
 
 .fire {
     background-color: var(--type-fire);
-    color: var(--clr-black);
+    color: var(--clr-white);
 }
 
 .water {
@@ -217,7 +227,7 @@ main {
 
 .electric {
     background-color: var(--type-electric);
-    color: var(--clr-white);
+    color: var(--clr-black);
 }
 
 .ice {
@@ -252,7 +262,7 @@ main {
 
 .bug {
     background-color: var(--type-bug);
-    color: var(--clr-black);
+    color: var(--clr-white);
 }
 
 .rock {
